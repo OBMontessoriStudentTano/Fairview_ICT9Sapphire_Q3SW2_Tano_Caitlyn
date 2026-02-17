@@ -7,7 +7,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
 </head>
    <style>
-     
+     .Box{
+        width: 300px;
+        padding: 15px;
+        margin: 10px auto;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f0eded;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
    </style>
 <body>
     <script>
@@ -22,27 +30,30 @@
         }
     </script>
 
-    <h1>Product Locator</h1>
+    <br>
 
     <br>
 
-    <h4>Welcome to the blahblahblah</h4>
-    <div class="box">
+    <h1 style="text-align: center;">Product Locator</h1>
 
-    <div id="form"></div>
+    <br>
+
+    <h4 style="text-align: center;">Welcome to the Product Locator where we can find you nice items to buy</h4>
+
+    <br>
+
+    <div class="Box">
     <form action="#">
-       <label for="">Enter first number:</label>
+       <label for="num1">Enter your desired budget:</label>
        <br>
        <input type="number" id="num1" class="form-control" placeholder="First Number" required>
-
        <br>
        <button type="submit" class="btn btn-info" onmouseover="calculate()">
         Calculate
        </button>
-
     </form>
-
         <p id="display" class="text-center display-6"></p>
+    </div>
 
     <script>
         function calculate(){
@@ -54,7 +65,11 @@
             document.getElementById('display').innerHTML = "Your discount is " + E;
 
         }
-    </script>   
+    </script> 
+    
+    <br>
+
+    
 </body>
 </html>
 </div>
